@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingBottom="125dp"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:id="@+id/appLogoLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="39.5dp"
+                android:src="@mipmap/kids_tunes"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/app_by_assemble"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/assembleLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appLogoLayout"
+            android:layout_marginTop="48dp"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/assembleLogo"
+                android:layout_width="44dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:src="@drawable/assemble_logo_48"
+                android:tint="@color/colorAccent"
+                />
+
+            <Button
+                style="?android:borderlessButtonStyle"
+                android:id="@+id/visitWebSiteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:paddingStart="64dp"
+                android:paddingEnd="64dp"
+                android:textColor="@android:color/white"
+                android:fontFamily="sans-serif"
+                android:textAllCaps="false"
+                android:drawablePadding="4dp"
+                android:text="@string/visit_web_site"
+                android:background="@drawable/ripple_blue_button"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/appleMusicLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/assembleLayout"
+            android:layout_marginTop="48dp"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/appleMusicLogo"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:src="@drawable/applemusic_appicon"
+                />
+
+            <Button
+                style="?android:borderlessButtonStyle"
+                android:id="@+id/signOutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:paddingStart="64dp"
+                android:paddingEnd="64dp"
+                android:textColor="@android:color/white"
+                android:fontFamily="sans-serif"
+                android:textAllCaps="false"
+                android:drawablePadding="4dp"
+                android:text="@string/sign_out"
+                android:background="@drawable/ripple_red_button"
+                />
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>

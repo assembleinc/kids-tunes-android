@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    >
+    
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/containerLayout"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="1dp"
+        app:cardMaxElevation="2dp"
+        app:cardCornerRadius="8dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        >
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            >
+
+            <FrameLayout
+                android:id="@+id/artworkMaskView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:background="@color/colorThumbnailBorder"
+                android:padding="0.5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/artworkImageView"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@color/colorThumbnailBorder"
+                    />
+
+                <ImageButton
+                    android:id="@+id/playbackImageButton"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:alpha="0.65"
+                    android:background="@color/black"
+                    android:src="@drawable/baseline_pause_circle_filled_32"
+                    android:tint="@android:color/white"
+                    android:padding="8dp"
+                    />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/rankPositionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/artworkMaskView"
+                android:textSize="15sp"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="sans-serif-medium"
+                android:textAlignment="center"
+                android:maxEms="2"
+                android:minEms="2"
+                />
+
+            <ImageButton
+                android:id="@+id/favoriteButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:src="@drawable/baseline_favorite_24"
+                android:tint="@color/red"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintWidth_default="spread"
+                app:layout_constraintStart_toEndOf="@id/rankPositionTextView"
+                app:layout_constraintEnd_toStartOf="@id/favoriteButton"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                >
+
+                <TextView
+                    android:id="@+id/songNameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorAccent"
+                    android:fontFamily="sans-serif-medium"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="@string/app_name"
+                    />
+
+                <TextView
+                    android:id="@+id/artistNameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorAccent"
+                    android:fontFamily="sans-serif"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="@string/app_name"
+                    />
+
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/yellow">
+
+    <ImageButton
+        android:id="@+id/closeButton"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/baseline_close_36"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:tint="@color/colorAccent"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/musicImageView"
+            android:layout_width="171.75dp"
+            android:layout_height="196.5dp"
+            android:src="@mipmap/music"
+            />
+
+        <ImageView
+            android:layout_width="179dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/kids_tunes"
+            android:layout_marginTop="32dp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        style="?android:borderlessButtonStyle"
+        android:id="@+id/signInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="86dp"
+        android:paddingEnd="86dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="46dp"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif"
+        android:textAllCaps="false"
+        android:drawablePadding="4dp"
+        android:drawableEnd="@mipmap/ic_apple_music"
+        android:text="@string/sign_in_with"
+        android:background="@drawable/ripple_red_button"
+        />
+
+</android.support.constraint.ConstraintLayout>

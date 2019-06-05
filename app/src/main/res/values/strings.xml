@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE resources [<!ENTITY appname "Kids Tunes">]>
+
+<resources>
+    <string name="app_name">&appname;</string>
+    <string name="connect_with_apple_music">To sign in, connect &appname; to Apple Music.</string>
+    <string name="playlist_name">My &appname;</string>
+    <string name="sign_in_with">Sign in with</string>
+    <string name="sign_out">Log Out</string>
+    <string name="visit_web_site">Visit Site</string>
+    <string name="app_by_assemble">is a demo app by Assemble Inc.</string>
+
+    <string name="favorites">Favorites</string>
+    <string name="top_100">Top 100</string>
+    <string name="account">Account</string>
+
+    <string name="notification_play">Play</string>
+    <string name="notification_pause">Pause</string>
+    <string name="notification_previous">Previous</string>
+    <string name="notification_next">Next</string>
+
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="previous_track">Previous Track</string>
+    <string name="next_track">Next Track</string>
+</resources>
